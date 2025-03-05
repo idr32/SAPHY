@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Was sind die verschiedenen Energieformen?</title>
+</head>
+<style>
+    p{
+        text-align: left;
+    }
+    i{
+        color: black;
+        text-align: center;
+    }
+    .red{
+        color: red;
+    }
+</style>
+<body>
+    <h1>9. Klasse</h1>
+    <h3>Mechanische Energieformen</h3>
+
+    <h4>1.4) Energieänderung und Arbeit</h4>
+
+    <p>
+        Die Energie eines Körpers kann sich ändern, das haben wir schon in den anderen Kapiteln erfahren. In der Physik spricht man hierbei von Arbeit. Folgende Phraseologie muss beachtet werden:
+    </p>
+    
+    <i>
+        Fügt man einem Körper Energie hinzu (z.b durch Hochheben des Körpers auf eine höhere Höhe) verrichtet man Arbeit an dem Körper. „An diesem Körper wird Arbeit verrichtet“. 
+    </i>
+
+    <p>
+        Überlege dir nun, wie sich das Prinzip von Arbeit mit dem Energieerhaltungssatz verbinden lässt:
+    </p>
+    
+    <p class="versteckt">
+        Während der eine Körper an Energie gewinnt, verliert der andere Körper an Energie (beim Hochheben eines Gegenstandes muss ich selbst Muskelarbeit verrichten --> chemische Energie in den Muskeln wird in kinetische Energie umgewandelt und dann in Höhenenergie des Gegenstandes), im geschlossenem System Gegenstand-Man selbst ist die Gesamtenergie also trotzdem noch gesamt. 
+    </p>
+
+    <p>
+        Wir unterscheiden verschiedene Arten von Arbeit:
+    </p>
+    
+    <p>
+        <b>Hubarbeit:</b> Einem Körper wird Höhenenergie hinzugefügt (--> er wird angehoben)
+    </p>
+    
+    <p>
+        <b>Beschleunigungsarbeit:</b> Ein Körper wird beschleunigt, ihm wird also kinetische Energie hinzugefügt. <span class="red">Achtung:</span> Auch bei Abbremsen handelt es sich um eine (entgegen der Bewegungsrichtung) gerichteten Beschleunigung
+    </p>
+    
+    <p>
+        Was die Formel für Arbeit angeht, müssen wir die Definition der Arbeit genauer betrachten: Arbeit ist eine Energieänderung eines Körpers, man kann zur Berechnung der Arbeit also von der Gesamtenergie des Körpers nach Verrichten der Arbeit die anfänglichen Gesamtenergie abziehen. <span class = "red">Dieser Ansatz wird in Schulaufgaben oft vergessen, ist jedoch häufig der schnellere Weg zur Lösung!</span>
+    </p>
+
+        <i>W = E<sub>ges,2</sub>- E<sub>ges,1</sub> </i>
+
+    <p>
+        Anhand dieser Formel können wir uns nun die Einheit der Arbeit überlegen:
+    </p>
+    
+    <p class= "versteckt">
+        Da es sich bei Arbeit um eine reine Differenz von zweier Energien handelt, ist die Einheit der Arbeit ebenfalls Joule.
+    </p>
+    
+    <p>
+        Eine weitere Formel für die Arbeit ist über Kraft und Weg. Diese besagt, dass wenn man mit einer Kraft F über eine Strecke s auf einen Körper wirkt, an diesem Körper Arbeit verrichtet wird. 
+    </p> 
+    
+    <i>W = F · s |W| = 1 J</i>
+
+    <p>
+        Nach dieser Formel lässt sich die Goldene Regel der Mechanik formulieren:
+    </p>
+        
+    <i>Das Produkt aus Kraft (entlang des Weges) und Weg ändert sich durch Einsatz eines Kraftwandlers nicht.</i>
+    <p>
+        An einem konkreten Beispiel bedeutet dies folgendes:
+    </p>
+
+    
+    <p>Betrachten wir eine Kiste, welche eine gewisse Höhe z.b auf die Ladefläche eines LKWs gehoben werden muss. Es bieten sich uns jetzt zwei Möglichkeiten, diese Aufgabe zu bewältigen:</p>
+       <p> 1.) Wir heben die Kiste direkt hoch, wir müssen also eine Kraft über eine Strecke  auf die Kiste ausüben. </p>
+       <p> 2.) Wir bringen eine Rampe an die Ladefläche des LKWs an, um die Strecke, über welche wir die Kraft ausüben müssen zu vergrößern. </p>
+    <p> In beiden Fällen ist die aufzubringende Arbeit (Hubarbeit) gleich groß (Erinnerung: , hier ist m, g und h in beiden Fällen gleich groß). Die Strecke auf welche eine Kraft aufgebracht werden muss, ist jedoch im zweiten Fall größer. Nach der Formel  muss hier also weniger Kraft aufgebracht werden. </p> 
+
+<br>
+    <a href="https://www.leifiphysik.de/mechanik/arbeit-energie-und-leistung/grundwissen/goldene-regel-der-mechanik">Simulation</a>
+
+    <script>
+        document.querySelectorAll(".versteckt").forEach(element => {
+            element.addEventListener("click", function() {
+                this.classList.toggle("sichtbar");
+            });
+        });
+    </script> 
+</body>
+</html>
+

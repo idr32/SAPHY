@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Was sind die verschiedenen Energieformen?</title>
+</head>
+<style>
+    p{
+        text-align: left;
+    }
+    i{
+        color: black;
+        text-align: center;
+    }
+    .red{
+        color: red;
+    }
+</style>
+<body>
+    <h1>9. Klasse</h1>
+    <h3>Mechanische Energieformen</h3>
+
+    <h4>1.4) Mechanische Leistung</h4>
+
+    <p>
+        Gedankenexperiment: Wir betrachten zwei Personen, beide heben Gewichte auf eine Höhe von einem Meter an. Person A tut dies in zwei Sekunden, die andere nur in einer halben. Für wen der beiden Personen B ist dies nun anstrengender? 
+    </p>
+
+    <p class="versteckt">
+        Für Person B ist diese Aktivität anstrengender. Wir sprechen hier von der mechanischen Leistung P (=Power).    </p>
+    </p>
+
+    <p>
+        Die Formel für die Leistung lautet wie folgt:
+    </p>
+
+    <i>
+        P=<sup>W</sup>/<sub>Δt</sub> mit [P]=1 W (Watt)
+    </i>
+
+    <script>
+        document.querySelectorAll(".versteckt").forEach(element => {
+            element.addEventListener("click", function() {
+                this.classList.toggle("sichtbar");
+            });
+        });
+    </script> 
+</body>
+</html>
+

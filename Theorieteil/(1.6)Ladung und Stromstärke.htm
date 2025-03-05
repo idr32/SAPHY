@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Was sind die verschiedenen Energieformen?</title>
+</head>
+<style>
+    p{
+        text-align: left;
+    }
+    i{
+        color: black;
+        text-align: center;
+    }
+    .red{
+        color: red;
+    }
+</style>
+<body>
+    <h1>9. Klasse</h1>
+    <h3>Mechanische Energieformen</h3>
+
+    <h4>1.6) Ladung und Stromstärke</h4>
+
+    <p>
+        Elektrische Energie spielt eine zentrale Rolle in unserem Alltag. Sie beschreibt die Energie, die durch Bewegung von elektrischen Ladungsträgern, wie Elektronen, übertragen oder gespeichert wird. Es gibt verschiedene Formen von elektrischer Energie, die für unterschiedliche Anwendungen genutzt werden.
+    </p>
+    
+    <p>
+        <u>Zur Erklärung von Ladung betrachten wir das <b>Kern-Hülle-Modell</b> des Atoms:</u>
+    </p>
+
+    <p>
+        Ein Atom besteht aus einem <b>positiv geladenen Atomkern</b> und einer <b>negativ geladenen Atomhülle.</b> Der Atomkern besteht aus <b>Protonen und Neutronen</b>, in der Atomhülle befinden sich <b>Elektronen</b>. Jedes Elektron trägt eine <b>negative Elementarladung e-</b>, jedes Proton eine <b>positive Elementarladung e+</b>. Die Neutronen sind <b>ungeladen</b>. Es gilt: <span class = "red">e=1,602×10-19 Coulumb</span>
+    </p>
+
+    <p>
+        Wie stark ein Körper positiv oder negativ geladen ist, wird durch die <b>elektrische Ladung</b> beschrieben:
+    </p>
+   
+    <p>
+        Das Formelzeichen der Ladung ist „Q“. Angegeben wird die Ladung in der Einheit Q=1c (Coulumb). Die Ladung ist immer ein vielfaches der Elementarladung e. Es gilt: Q=n×e	(<-Ladung eines Teilchens, n=Anzahl).
+    </p>
+   
+    <p><u>Stromstärke:</u></p>
+ 
+    <p>
+        Die <b>Stromstärke I</b> ist ein <b>Maß</b> für die <b>Ladung Q</b>, die in einer bestimmten <b>Zeit t</b> durch einen <b>Leiterquerschnitt</b> transportiert wird. Es gilt: <b>I=<sup>Q</sup>/<sub>t</sub></b>. Die Stromstärke wird in der Einheit Ampere (A) angegeben. Kleinere Stromstärken werden in <b>Milliampere</b> (1mA=0,001A) oder <b>Mikroampere</b> (1µA=0,000001A) angegeben. 
+    </p>
+    
+    <p>
+        Die Stromstärke wird mit einem Amperemeter gemessen. Dieses muss in Reihe/Serie geschalten werden. Die in einem Gerät vorhandene Stromstärke hängt von der Anzahl der Elektronen ab, die in einer bestimmten Zeit durch den Leiter fließen. 
+    </p>
+
+     <p><u>Anwendung:</u></p>
+
+    <p>
+        In elektrischen Geräten wird elektrische Energie genutzt, um Arbeit zu verrichten. Beispiele: Smartphones (Akkukapazität ca. 3.200mAh) und E-Bikes (Akku ca.500Wh).
+    </p>
+    
+    <p><u>Eine Beispielaufgabe zu Ladung und Stromstäre könnte lauten:</u></p>
+
+    <p>
+        Durch eine Lampe fließt ein Strom der Stärke 300mA. Bestimme die Anzahl der Elektronen, die in einer Minute durch die Lampe fließen.
+    </p> 
+
+
+    <button class="versteckt" id="1" onclick=unblur(1)>
+        <b>Lösung:</b> Q=I×t=0,300A×60s=18c; N=Q/e=18c/1,602×10<sup>-19</sup>=1,1×10<sup>20</sup>
+    </button>
+    
+
+    
+    <script>
+        document.querySelectorAll(".versteckt").forEach(element => {
+            element.addEventListener("click", function() {
+                this.classList.toggle("sichtbar");
+            });
+        });
+
+        function unblur(id) {
+            document.getElementById(id.toString()).classList.add("sichtbar");
+            document.getElementById(id.toString()).classList.remove("versteckt");
+            console.log("aufgerufen");
+        }
+    </script> 
+</body>
+</html>
+

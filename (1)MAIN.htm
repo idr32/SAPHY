@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Physik-Lernplattform</title>
+
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" async></script>
+  </head>
+  <body>
+    <h1>Physik-Lernplattform</h1>
+    <div class="formBox">
+      <label for="topic">Wähle dein Thema:</label>
+      <select id="topic" name="topic">
+        <optgroup label="Energie">
+          <option value="Mechanische_Energie">Mechanische Energie</option>
+          <option value="Elektrische_Energie">Elektrische Energie</option>
+        </optgroup>
+        <optgroup label="Wärmelehre">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </optgroup>
+      </select>
+    </div>
+    
+    <label for="difficulty">Wähle eine Schwierigkeitsstufe:</label>
+    <select id="difficulty">
+      <option value="1">1 (leicht)</option>
+      <option value="2">2 (mittel)</option>
+      <option value="3">3 (schwer)</option>
+    </select>
+
+    <button onclick="generateTask()">Aufgabe generieren</button>
+    <div id="taskContainer" class="task"></div>
+    
+    <a href="Theorieteil/(1)TheorieMAIN.htm">Hier sind die Erklärungen für deine Themen.</a>
+
+  </body>
+</html>
